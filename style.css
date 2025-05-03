@@ -1,0 +1,273 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and page setup */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header section to occupy the whole page */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers the content */
+  align-items: center; /* Horizontally centers the content */
+  height: 100vh; /* Takes full height of the viewport */
+  background-color: #6a1b9a; /* A purple color background */
+  color: white; /* White text */
+  text-align: center;
+  padding: 20px; /* Padding for some space */
+}
+
+header h1 {
+  font-size: 3rem; /* Slightly larger font for the name */
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.25rem; /* Slightly larger text for the subheading */
+  margin-bottom: 20px;
+}
+
+/* Navigation links */
+header nav.main-nav {
+  margin-top: 20px;
+}
+
+header nav.main-nav a {
+  color: #ffffff; /* White color for the navigation links */
+  font-size: 1.1rem; /* Slightly larger text for the navigation links */
+  margin: 0 15px; /* Adds some space between the links */
+  text-decoration: none; /* Removes underline from the links */
+  font-weight: bold; /* Makes the text bold */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+header nav.main-nav a:hover {
+  color: #ffeb3b; /* Change color to yellow on hover */
+  text-decoration: underline; /* Underlines the link on hover */
+}
+
+/* Social Links Section */
+header .social-links {
+  display: flex;
+  gap: 20px; /* Adds space between social icons */
+  justify-content: center; /* Centers the social icons */
+  margin-top: 20px;
+}
+
+header .social-links img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+header .social-links img:hover {
+  transform: scale(1.2); /* Enlarge icons on hover */
+}
+
+/* Scroll Down Section */
+header .scroll-down {
+  margin-top: 40px;
+  animation: bounce 1.5s infinite ease-in-out;
+}
+
+header .scroll-down img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Scroll animation */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+/* My Story Section */
+#my-story {
+  background-color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+#my-story h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #6a4eec;
+}
+
+.story-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.story-image img {
+  border-radius: 70%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+.story-content p {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Skills Section */
+#skills {
+  background-color: #f4f7fb;
+  padding: 40px 0;
+  text-align: center;
+}
+
+#skills h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.skills-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skills-row img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Projects Section */
+#projects {
+  padding: 40px 0;
+  background-color: white;
+  text-align: center;
+}
+
+#projects h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.project-card {
+  background-color: #f4f7fb;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  width: 250px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+
+.project-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.project-info h3 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.project-info p {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.tech-used {
+  font-size: 0.9rem;
+  margin-top: 10px;
+  color: #6a4eec;
+}
+
+/* Achievements Section */
+#achievements {
+  background-color: #f4f7fb;
+  padding: 40px 0;
+}
+
+.achievement-card {
+  text-align: center;
+  margin: 20px;
+}
+
+.achievement-card img {
+  width: 50px;
+  height: 50px;
+}
+
+.achievement-info h3 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Learning Section */
+#learning {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.learning-list {
+  list-style: none;
+  padding: 0;
+}
+
+.learning-list li {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+/* Let's Connect Section */
+#connect {
+  background-color: #6a4eec;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.social-icons a {
+  margin: 0 20px;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
